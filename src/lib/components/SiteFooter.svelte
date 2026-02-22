@@ -39,6 +39,7 @@ USAGE EXAMPLE:
     background-color: var(--color-light-gray);
     padding: var(--spacing-xl) var(--spacing-md);
     margin-top: var(--spacing-xxl);
+    margin-bottom: var(--spacing-xl);
   }
 
   .footer-container {

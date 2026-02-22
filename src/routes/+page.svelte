@@ -8,6 +8,10 @@ This is your page!
   import ArticleBody from '$lib/components/ArticleBody.svelte';
   import Image from '$lib/components/Image.svelte';
   import RelatedLinks from '$lib/components/RelatedLinks.svelte';
+  import NewsAlert from '$lib/components/NewsAlert.svelte';
+  import FeaturedPic from '../lib/components/FeaturedPic.svelte';
+  import WeeklyPics from '../lib/components/WeeklyPics.svelte';
+  import EnjoyRanking from '../lib/components/EnjoyRanking.svelte';
 
   // Article metadata
   let headline = 'Become a force for good. Join our next class.';
@@ -31,6 +35,33 @@ This is your page!
 <!-- Your page content goes here -->
 <div class="container">
   
+  <NewsAlert
+    alert = "New York City is under a winter storm warning. Blizzard conditions are expected to last until Monday, February 23rd at 12PM Eastern Standard Time. Stay safe and stay informed with NYCity News Service."
+  />
+
+<!-- Featured Image: A large, eye-catching photo with caption -->
+<WeeklyPics>
+  <FeaturedPic
+    src="https://picsum.photos/200/300"
+    alt="Random Image 1."
+    caption="Random image from Lorem Picsum, 2026."
+    size="medium"
+/>
+  <FeaturedPic
+    src="https://picsum.photos/200/300"
+    alt="Random Image 2."
+    caption="Random image from Lorem Picsum, 2026."
+    size="medium"
+/>  
+  <FeaturedPic
+    src="https://picsum.photos/200/300"
+    alt="Random Image 3."
+    caption="Random image from Lorem Picsum, 2026."
+    size="medium" 
+/>
+
+</WeeklyPics>
+
   <!-- Article Header: Headline, byline, and publication date -->
   <ArticleHeader
     {headline}
@@ -84,6 +115,8 @@ This is your page!
       We invite you to be part of our world.
     </p>
   </ArticleBody>
+
+  <EnjoyRanking />
 
   <!-- Related Stories: Links to other articles -->
   <RelatedLinks
